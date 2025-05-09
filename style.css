@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.scroll-line-top {
+  height: 6px;
+  background-color: #f4623a;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.main-container .header .navbar-wrap {
+  color: white;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("./images/bg-masthead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.main-container .header .navbar-wrap .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  padding: 22px 0px;
+  align-items: center;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+.main-container .header .navbar-wrap .navbar .logo {
+  font-size: 20px;
+  padding-left: 150px;
+}
+.main-container .header .navbar-wrap .navbar .menu-list ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  margin-right: 150px;
+}
+.main-container .header .navbar-wrap .navbar.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  position: fixed;
+  z-index: 1;
+}
+.main-container .header .navbar-wrap .hdr-cnt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 97px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.main-container .header .navbar-wrap .hdr-cnt .devider {
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 1;
+  border: 1px solid #f4623a;
+  background: #f4623a;
+}
+.main-container .header .navbar-wrap .hdr-cnt .heading {
+  font-size: 56px;
+  width: 100%;
+  max-width: 710px;
+  text-align: center;
+  line-height: 1.2;
+}
+.main-container .header .navbar-wrap .hdr-cnt .sub-heading {
+  font-size: 18.4px;
+  color: rgba(255, 255, 255, 0.75) !important;
+  width: 800px;
+  margin-bottom: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.main-container .header .navbar-wrap .hdr-cnt .hdr-cnt-btn button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  border-color: #f4623a;
+  background: #f4623a;
+  color: white;
+}
+.main-container .hdr-sub-cnt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 0;
+  background: #f4623a;
+}
+.main-container .hdr-sub-cnt .devider {
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 1;
+  border: 1px solid white;
+  background: white;
+}
+.main-container .hdr-sub-cnt .sub-cnt-heading {
+  font-size: 32px;
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+.main-container .hdr-sub-cnt .sub-cnt-sub-heading {
+  font-size: 16px;
+  width: 680px;
+  margin-bottom: 3rem;
+  color: white;
+  text-align: center;
+}
+.main-container .hdr-sub-cnt .sub-cnt button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  border-color: white;
+  background: white;
+  color: black;
+}
+.main-container .service-container {
+  padding: 8rem 0;
+}
+.main-container .service-container .sr-heading {
+  font-size: 32px;
+  text-align: center;
+}
+.main-container .service-container .devider {
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 1;
+  border: 1px solid #f4623a;
+  background: #f4623a;
+}
+.main-container .service-container .service-cnt {
+  display: flex;
+  margin: 0px 15rem;
+}
+.main-container .service-container .service-cnt .service-cnt-wrapper {
+  text-align: center;
+  margin: 0px 55px;
+}
+.main-container .service-container .service-cnt .service-cnt-wrapper .sr-cnt-logo i {
+  color: #f4623a;
+  font-size: 2.5rem;
+}
+.main-container .service-container .service-cnt .service-cnt-wrapper .sr-cnt-title {
+  font-size: 24px;
+}
+.main-container .service-container .service-cnt .service-cnt-wrapper .sr-cnt-desc {
+  font-size: 16px;
+  color: #6c757d !important;
+  line-height: 1.5;
+}
+.main-container .img-gallary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-container .img-gallary .img img {
+  width: 100%;
+  height: 100%;
+}
+.main-container .img-gallary-down-sec {
+  padding: 8rem 0px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.main-container .img-gallary-down-sec .title {
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+.main-container .img-gallary-down-sec .img-gallary-down-btn button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  border-color: white;
+  background: white;
+  color: black;
+}
+.main-container .registration-form {
+  text-align: center;
+  padding: 8rem;
+}
+.main-container .registration-form .heading {
+  font-size: 2rem;
+}
+.main-container .registration-form .devider {
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  opacity: 1;
+  border: 1px solid #f4623a;
+  background: #f4623a;
+}
+.main-container .registration-form .form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+.main-container .registration-form .form-fields button {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  border-color: #f4623a;
+  background: #f4623a;
+  color: white;
+  opacity: 0.65;
+  pointer-events: none;
+  margin-bottom: 3rem !important;
+}
+.main-container .registration-form .form-fields .form-control {
+  padding: 1rem 0.75rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+.main-container .registration-form .form-fields .form-control.message {
+  height: 10rem;
+}
+.main-container .registration-form .contact-info {
+  text-align: center;
+}
+.main-container .registration-form .contact-info i {
+  font-size: 2rem;
+  color: #6c757d;
+}
+.main-container .footer {
+  color: #6c757d;
+  font-size: 14px;
+  bottom: 0;
+  text-align: center;
+  padding-bottom: 3rem;
+}/*# sourceMappingURL=style.css.map */
